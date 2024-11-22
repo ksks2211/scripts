@@ -1,4 +1,4 @@
-## React to Docker Image
+## React App to Docker Image
 
 ### build image
 - docker build -t react-spa:first ./
