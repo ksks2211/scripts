@@ -19,4 +19,4 @@ ENV SOME_VALUE="default-key-from-dockerfile"
 ENV SPRING_PROFILES_ACTIVE=deploy
 
 
-ENTRYPOINT ["java", "-jar", "--spring.profiles.active=${SPRING_PROFILES_ACTIVE}","app.jar"]
+ENTRYPOINT ["java", ,"-Duser.timezone=UTC","-jar", "--spring.profiles.active=${SPRING_PROFILES_ACTIVE}","app.jar"]
