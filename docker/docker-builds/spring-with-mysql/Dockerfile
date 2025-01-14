@@ -14,7 +14,6 @@ WORKDIR /app
 
 COPY --from=builder /app/build/libs/*.jar app.jar
 
-ENV SOME_VALUE="default-key-from-dockerfile"
 
 ENV SPRING_PROFILES_ACTIVE=deploy
 

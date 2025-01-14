@@ -1,0 +1,1 @@
+docker run -it --rm --net mysql-network mysql mysql -h mymysql -u myuser -p

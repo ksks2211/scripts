@@ -9,3 +9,4 @@
 - docker run -d -p 8080:8080 --name spring-app spring-app:0.0.1
 - docker run -d -p 8080:8080 -e SOME_VALUE="some-key-from-command" --name spring-app spring-app:0.0.1
 - docker run -d -p 8080:8080 -e SPRING_PROFILES_ACTIVE=development --name spring-app spring-app:0.0.1
+- docker run -d -p 8080:8080 --name spring-app --env-file .env.production --net mysql-network spring-app:0.0.1
